@@ -78,7 +78,7 @@ input:hover {
 - White: hsl(0, 0%, 100%) */
 
 /* Media Query for Devices below (768px = Tablet-Portrait)  */
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
   .input {
     width: 100%;
     padding: 0;
