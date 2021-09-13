@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app {
+  background: hsl(185, 41%, 84%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Space Mono", monospace;
+}
+.logo-container {
+  margin-top: 1rem;
+}
+.app-container {
+  background: rgb(255, 255, 255);
+  display: flex;
+  width: 80vw;
+  padding: 3rem;
+  border-radius: 1rem;
+  margin: 1rem 0;
+}
+
+/* Media Query for Devices below (768px = Tablet-Portrait)  */
+@media screen and (max-width: 767px) {
+  .app-container {
+    width: 90vw;
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+}

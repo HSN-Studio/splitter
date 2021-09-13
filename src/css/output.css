@@ -1,0 +1,58 @@
+.output {
+  width: 50%;
+  background-color: hsl(183, 100%, 15%);
+  padding: 0 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  justify-content: space-around;
+}
+.tip-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tip-label {
+  color: white;
+}
+
+.amount {
+  font-weight: 700;
+  font-size: 5vw;
+}
+
+.output-value,
+.amount,
+.reset-btn {
+  color: hsl(185, 41%, 84%);
+  font-family: "Space Mono", monospace;
+}
+
+.reset-btn {
+  width: 100%;
+  background-color: hsl(172, 80%, 76%);
+  color: hsl(183, 100%, 15%);
+  border: none;
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+.reset-btn:hover {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+}
+
+@media screen and (max-width: 767px) {
+  .output {
+    width: 100%;
+    padding: 1rem;
+  }
+  .tip-container {
+    margin: 0 0 1rem 0;
+  }
+}

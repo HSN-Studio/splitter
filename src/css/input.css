@@ -1,0 +1,86 @@
+label {
+  font-weight: 700;
+}
+
+.input {
+  width: 50%;
+  padding: 0 1.5rem 0 0;
+}
+
+.input-err {
+  color: red;
+  font-size: 14px;
+}
+
+input {
+  outline: none;
+  background-color: hsl(189, 41%, 97%);
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 24px;
+  width: 100%;
+  height: 2.5rem;
+  text-align: right;
+  color: hsl(183, 100%, 15%);
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+input:focus,
+input:hover {
+  border: 2px solid hsl(173, 43%, 65%);
+  cursor: pointer;
+}
+
+.input-icons {
+  position: absolute;
+  padding: 0.6rem 0 0 1rem;
+}
+
+.input-bill,
+.input-tip,
+.input-people {
+  margin: 2rem 0;
+}
+
+.input-tip {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+.input-tip label {
+  display: block;
+  width: 100%;
+}
+.tip-btn {
+  color: white;
+  background-color: hsl(183, 100%, 15%);
+  display: inline-flex;
+  height: 2.5rem;
+  width: 30%;
+  text-align: left;
+  margin: 0.5rem 0;
+  padding: 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+.tip-btn:hover,
+.active {
+  background-color: hsl(172, 80%, 76%);
+  color: hsl(183, 100%, 15%);
+}
+
+/* - Very dark cyan: hsl(83, 1010%, 15%)
+- Dark grayish cyan: hsl(186, 14%, 43%)
+- Dark grayish cyan: hsl(184, 14%, 56%)
+- Light grayish cyan: hsl(185, 41%, 84%)
+- Light grayish cyan: hsl(189, 41%, 97%)
+- White: hsl(0, 0%, 100%) */
+
+/* Media Query for Devices below (768px = Tablet-Portrait)  */
+@media screen and (max-width: 767px) {
+  .input {
+    width: 100%;
+    padding: 0;
+  }
+}

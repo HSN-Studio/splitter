@@ -1,0 +1,22 @@
+$color-primary: #f38e82;
+
+.spinner {
+  margin: 1rem auto;
+  text-align: center;
+
+  svg {
+    height: 6rem;
+    width: 6rem;
+    fill: $color-primary;
+    animation: rotate 2s infinite linear;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
